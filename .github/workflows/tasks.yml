@@ -11,6 +11,7 @@ jobs:
   task:
     runs-on: ubuntu-latest
     steps:
+    - name: Print Action
     - run: 'echo "event: ${{ github.event.action }}"'
     - name: Subconvert
       if: github.event.action == 'Subconvert'
