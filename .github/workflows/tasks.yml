@@ -16,5 +16,6 @@ jobs:
     - name: Subconvert
       if: github.event.action == 'Subconvert'
       uses: actions/checkout@v1
-      run: 'echo "event: ${{ github.event.action }}"'
-      run: echo "Done"
+      run: |
+        'echo "event: ${{ github.event.action }}"'
+        'echo "Done"'
