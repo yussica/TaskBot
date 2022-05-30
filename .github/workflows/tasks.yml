@@ -11,8 +11,9 @@ jobs:
   task:
     runs-on: ubuntu-latest
     steps:
-    - name: Subconvert
-      uses: actions/checkout@v1
     - run: 'echo "event: ${{ github.event.action }}"'
-    - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
-    - run: echo "Done"
+    - name: Subconvert
+      if: github.event.action == 'Subconvert'
+      uses: actions/checkout@v1
+      run: 'echo "event: ${{ github.event.action }}"'
+      run: echo "Done"
