@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Subconvert
-      - run: 'echo "field: ${{ github.event.event_type }}"'
-      - run: 'echo "field: ${{ github.event.client_payload.foo }}"'
-      - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
-      - run: echo baz
+    - run: 'echo "field: ${{ github.event.event_type }}"'
+    - run: 'echo "field: ${{ github.event.client_payload.foo }}"'
+    - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+    - run: echo "Done"
