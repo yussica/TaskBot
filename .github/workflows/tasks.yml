@@ -17,7 +17,7 @@ jobs:
     - name: Subconvert
       if: github.event.action == 'Subconvert'
       run: |
-        curl http://198.181.41.37:25500/sub?target=clash&insert=false&config=configs%2Fyussicaex.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true&upload=true
-        curl http://198.181.41.37:25500/sub?target=quan&insert=false&config=configs%2Fyussicaex.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true&upload=true
-        curl http://198.181.41.37:25500/sub?target=quanx&insert=false&config=configs%2Fyussicaex.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true&upload=true
+        curl 'http://198.181.41.37:25500/sub?target=clash&insert=false&config=configs%2Fyussicaex.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true&upload=true'
+        curl 'http://198.181.41.37:25500/sub?target=quan&insert=false&config=configs%2Fyussicaex.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true&upload=true'
+        curl 'http://198.181.41.37:25500/sub?target=quanx&insert=false&config=configs%2Fyussicaex.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true&upload=true'
         echo "Done"
